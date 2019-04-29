@@ -1,0 +1,65 @@
+@font-face{
+    font-family: 'Lucida Calligraphy';
+    src: url('LucidaCalligraphy.ttf');
+}
+
+@font-face{
+    font-family: 'Segoe Script';
+    src: url('SegoeScript.ttf');
+}
+.label{
+-fx-text-fill: #cdba6c;
+-fx-font-family: 'Segoe Script';
+-fx-font-size: 12;
+}
+.label-caption{
+-fx-text-fill: #cdba6c;
+-fx-font-family: 'Lucida Calligraphy';
+-fx-font-size: 12;
+}
+.label-success {
+-fx-text-fill: #1fc1aa;
+-fx-font-family: 'Lucida Calligraphy';
+-fx-font-size: 12;
+}
+.label-warning {
+    -fx-text-fill: #ffad20;
+    -fx-font-family: 'Lucida Calligraphy';
+    -fx-font-size: 12;
+}
+.label-failure {
+    -fx-text-fill: #ff544b;
+    -fx-font-family: 'Lucida Calligraphy';
+    -fx-font-size: 12;
+}
+.label-heading{
+-fx-text-fill: #a378cd;
+-fx-font-family: 'Lucida Calligraphy';
+-fx-font-size: 16;
+}
+.button-caption{
+-fx-text-fill: Black;
+-fx-font-family: 'Lucida Calligraphy';
+-fx-font-size: 12;
+}
+#anchor {
+-fx-background-color: #446E9B;
+}
+.button-fill {
+    -fx-background-color: #fff196;
+    -fx-text-fill: #2831ff;
+    -fx-font-family: 'Segoe Script';
+    -fx-font-size: 12;
+}
+.text-fill {
+    -fx-background-color: #abd7ff;
+    -fx-text-fill: Blue;
+}
+.choice-box-fill {
+    -fx-background-color: #63a6bc;
+    -fx-text-fill: Blue;
+}
+.text-area-fill {
+   -fx-background-color: #abd7ff;
+    -fx-text-fill: Blue;
+}

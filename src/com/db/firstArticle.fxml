@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchor" prefHeight="458.0" prefWidth="600.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.firstArticle">
+   <children>
+      <ListView fx:id="listView_MCO_Codes" layoutX="27.0" layoutY="81.0" prefHeight="200.0" prefWidth="376.0" styleClass="choice-box-fill" stylesheets="@../../css/style.css" />
+      <Label layoutX="27.0" layoutY="49.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Custom Codes" />
+      <Button fx:id="buttonQuit" layoutX="457.0" layoutY="239.0" mnemonicParsing="false" onAction="#ButtonQuitOnAction" styleClass="button-fill" stylesheets="@../../css/style.css" text="Quit" />
+      <Button fx:id="buttonCreateMCO" layoutX="440.0" layoutY="113.0" mnemonicParsing="false" onAction="#ButtonCreateMCOOnAction" styleClass="button-fill" stylesheets="@../../css/style.css" text="Create MCO" />
+      <Button fx:id="buttonGetCodes" layoutX="440.0" layoutY="49.0" mnemonicParsing="false" onAction="#ButtonGetCodesOnAction" styleClass="button-fill" stylesheets="@../../css/style.css" text="Get Codes" />
+      <TextField fx:id="textField_Customer" layoutX="225.0" layoutY="371.0" prefHeight="26.0" prefWidth="159.0" promptText="Customer Name" styleClass="text-fill" stylesheets="@../../css/style.css" />
+      <TextField fx:id="textField_Solution_Type" layoutX="225.0" layoutY="318.0" prefHeight="26.0" prefWidth="159.0" promptText="Solution Type" styleClass="text-fill" stylesheets="@../../css/style.css" />
+      <ChoiceBox fx:id="choiceBox_ChangeAnalyst" layoutX="421.0" layoutY="320.0" prefHeight="28.0" prefWidth="116.0" styleClass="choice-box-fill" stylesheets="@../../css/style.css" />
+      <ChoiceBox fx:id="choiceBox_Product_Team" layoutX="21.0" layoutY="320.0" prefHeight="28.0" prefWidth="116.0" styleClass="choice-box-fill" stylesheets="@../../css/style.css" />
+      <ChoiceBox fx:id="choiceBox_Product_Line" layoutX="21.0" layoutY="383.0" prefHeight="28.0" prefWidth="116.0" styleClass="choice-box-fill" stylesheets="@../../css/style.css" />
+      <Label layoutX="226.0" layoutY="351.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Customer Name" />
+      <Label layoutX="234.0" layoutY="299.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Solution Type" />
+      <Label layoutX="437.0" layoutY="299.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Change Analyst" />
+      <Label layoutX="27.0" layoutY="299.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Product Team" />
+      <Label layoutX="27.0" layoutY="354.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Product Line" />
+   
+      <Label fx:id="label_FA_Status" layoutX="21.0" layoutY="421.0" prefHeight="22.0" prefWidth="566.0" stylesheets="@../../css/style.css" text="Status" />
+      <Label layoutX="191.0" layoutY="40.0" styleClass="label-heading" stylesheets="@../../css/style.css" text="Release to FA" />
+      <ImageView fitHeight="59.0" fitWidth="116.0" layoutX="429.0" layoutY="373.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+               <Image url="@../../img/soap.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="checkBox_SalesException" layoutX="450.0" layoutY="181.0" mnemonicParsing="false" styleClass="label-caption" stylesheets="@../../css/style.css" text="Sales Exception" />
+   </children>
+</AnchorPane>

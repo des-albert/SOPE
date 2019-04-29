@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchor" prefHeight="650.0" prefWidth="1093.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.opportunities">
+    <children>
+        <Button fx:id="buttonOpportunitiesQuit" layoutX="869.0" layoutY="601.0" mnemonicParsing="false" onAction="#ButtonOpportunitiesQuitOnAction"  styleClass="button-fill" text="Quit" />
+        <TableView fx:id="tableViewOpportunity" layoutX="19.0" layoutY="50.0" prefHeight="526.0" prefWidth="983.0" styleClass="text-fill">
+            <columns>
+                <TableColumn fx:id="columnOpportunity" prefWidth="363.0" text="Opportunity" />
+                <TableColumn fx:id="columnStatus" prefWidth="187.0" text="Status" />
+                <TableColumn fx:id="columnDate" prefWidth="100.0" text="Due Date" />
+                <TableColumn fx:id="columnQualified" prefWidth="109.0" text="Qualified" />
+                <TableColumn fx:id="columnPrimary" prefWidth="102.0" text="Primary Status" />
+                <TableColumn fx:id="columnException" prefWidth="120.0" text="Open Exception" />
+            </columns>
+        </TableView>
+      <Label fx:id="label_Opportunity_Status" layoutX="47.0" layoutY="607.0" prefHeight="18.0" prefWidth="681.0" stylesheets="@../../css/style.css" text="Status" />
+      <Label layoutX="361.0" layoutY="14.0" prefHeight="19.0" prefWidth="532.0" styleClass="label-heading" stylesheets="@../../css/style.css" text="Opportunities in SOPS Control" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1790.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.exceptions">
+    <children>
+        <TableView fx:id="tableViewExceptions" layoutX="36.0" layoutY="61.0" prefHeight="550.0" prefWidth="1679.0" styleClass="text-fill" stylesheets="@../../css/style.css">
+            <columns>
+                <TableColumn fx:id="columnOpp" prefWidth="200.0" text="Opportunity" />
+                <TableColumn fx:id="columnName" prefWidth="200.0" text=" Exception Name" />
+                <TableColumn fx:id="columnDate" maxWidth="60.0" prefWidth="97.0" text="Date" />
+                <TableColumn fx:id="columnStatus" prefWidth="100.0" text="Status" />
+                <TableColumn fx:id="columnNumber" maxWidth="150.0" text="Number" />
+                <TableColumn fx:id="columnAgileId" maxWidth="60.0" prefWidth="86.0" text="AgileId" />
+                <TableColumn fx:id="columnECO_MCO" prefWidth="100.0" text="ECO/MCO" />
+                <TableColumn fx:id="columnApprovers" prefWidth="200.0" text="Awaiting Approvals" />
+                <TableColumn fx:id="columnPrelim" maxWidth="100.0" prefWidth="111.0" text="Prelim" />
+                <TableColumn fx:id="columnFA" maxWidth="100.0" prefWidth="82.0" text="FA" />
+                <TableColumn fx:id="columnRevise" maxWidth="100.0" prefWidth="104.0" text="Revision" />
+                <TableColumn fx:id="columnCodes" prefWidth="360.0" text="Codes" />
+            </columns>
+        </TableView>
+        <Button fx:id="buttonExceptionQuit" layoutX="1669.0" layoutY="21.0" mnemonicParsing="false" onAction="#ButtonExceptionQuitOnAction" styleClass="button-fill" stylesheets="@../../css/style.css" text="Quit" />
+        <Label fx:id="labelStatus_Message" layoutX="305.0" layoutY="25.0" prefHeight="22.0" prefWidth="541.0" styleClass="label-caption" stylesheets="@../../css/style.css" />
+        <Label layoutX="86.0" layoutY="22.0" prefHeight="27.0" prefWidth="182.0" styleClass="label-heading" stylesheets="@../../css/style.css" text="Exceptions">
+         <font>
+            <Font size="24.0" />
+         </font></Label>
+      <ImageView fitHeight="42.0" fitWidth="75.0" layoutX="1540.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/soap.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

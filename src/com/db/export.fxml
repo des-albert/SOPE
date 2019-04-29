@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="anchor" prefHeight="700.0" prefWidth="1700.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.export">
+   <children>
+       <TableView fx:id="tableViewExport" layoutX="13.0" layoutY="242.0" prefHeight="371.0" prefWidth="1658.0" styleClass="text-fill" stylesheets="@../../css/style.css">
+           <columns>
+               <TableColumn fx:id="column_Parent_Id" editable="false" prefWidth="75" text="PARENT_ID" />
+               <TableColumn fx:id="column_Part_Type" editable="false" prefWidth="75" text="PART_TYPE" />
+               <TableColumn fx:id="column_Description" editable="false" prefWidth="160" text="DESCRIPTION" />
+               <TableColumn fx:id="column_Product_Line" editable="false" prefWidth="120" text="PRODUCT_LINE" />
+               <TableColumn fx:id="column_Cognizant" editable="false" prefWidth="90" text="COGNIZANT" />
+               <TableColumn fx:id="column_UoM" editable="false" prefWidth="60" text="UOM" />
+               <TableColumn fx:id="column_BoM_Line" editable="false" prefWidth="65" text="BOM_LINE" />
+               <TableColumn fx:id="column_Part_Number" editable="false" prefWidth="140" text="BOM_PARTNUMBER" />
+               <TableColumn fx:id="column_BoM_Qty" editable="false" prefWidth="60" text="BOM_QTY" />
+               <TableColumn fx:id="column_BoM_Class" editable="false" prefWidth="120" text="BOM_CLASS" />
+               <TableColumn fx:id="column_Asset" editable="false" prefWidth="90" text="ASSET" />
+               <TableColumn fx:id="column_Model" editable="false" prefWidth="110" text="MODEL_NUMBER" />
+               <TableColumn fx:id="column_Ext_Desc" editable="false" prefWidth="120" text="MODEL_EXTD_DESCRIPTION" />
+               <TableColumn fx:id="column_Config_Type" editable="false" prefWidth="160" text="CONFIGURATOR_TYPE" />
+           </columns>
+       </TableView>
+      <TableView fx:id="tableViewModel" editable="true" layoutX="802.0" layoutY="30.0" prefHeight="200.0" prefWidth="740.0" styleClass="text-fill" stylesheets="@../../css/style.css">
+        <columns>
+          <TableColumn fx:id="colModelId" editable="false" prefWidth="30" text="Id" />
+          <TableColumn fx:id="colModelNumber" editable="false" prefWidth="82.0" text="Number" />
+          <TableColumn fx:id="colModelDescription" prefWidth="250.0" text="Name" />
+          <TableColumn fx:id="colModelExtDesc" prefWidth="300" text="Description" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tableViewAsset" layoutX="328.0" layoutY="30.0" prefHeight="200.0" prefWidth="397.0" styleClass="text-fill" stylesheets="@../../css/style.css">
+        <columns>
+          <TableColumn fx:id="colAsset" prefWidth="90" text="Asset" />
+          <TableColumn fx:id="colProduct" prefWidth="211.0" text="Product" />
+          <TableColumn fx:id="colModel" prefWidth="93.0" text="Model" />
+        </columns>
+      </TableView>
+            <RadioButton fx:id="radioXC" layoutX="53.0" layoutY="82.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="91.0" text="XC">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleProduct" />
+         </toggleGroup>
+         <font>
+            <Font size="10.0" />
+         </font>
+      </RadioButton>
+            <RadioButton fx:id="radioStorage" layoutX="53.0" layoutY="130.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="91.0" text="Storage" toggleGroup="$toggleProduct">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </RadioButton>
+            <RadioButton fx:id="radioCluster" layoutX="53.0" layoutY="166.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="82.0" text="Cluster" toggleGroup="$toggleProduct">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="buttonExport" layoutX="1567.0" layoutY="51.0" mnemonicParsing="false" onAction="#ButtonExportOnAction" styleClass="button-fill" stylesheets="@../../css/style.css"  text="Export" />
+      <Button fx:id="buttonQuit" layoutX="1574.0" layoutY="114.0" mnemonicParsing="false" onAction="#ButtonQuitOnAction" styleClass="button-fill" stylesheets="@../../css/style.css" text="Quit" />
+      <Label fx:id="label_Export_Status" layoutX="110.0" layoutY="653.0" prefHeight="18.0" prefWidth="1135.0" text="Label" />
+      <Label layoutX="33.0" layoutY="7.0" prefHeight="22.0" prefWidth="134.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="1. Select Product" />
+      <Label layoutX="397.0" layoutY="7.0" prefHeight="22.0" prefWidth="134.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="2. Select Asset" />
+      <Label layoutX="937.0" layoutY="3.0" prefHeight="22.0" prefWidth="134.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="3. Select Model" />
+      <Label layoutX="167.0" layoutY="51.0" prefHeight="22.0" prefWidth="134.0" styleClass="label-heading" stylesheets="@../../css/style.css" text="Quote Export">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="88.0" fitWidth="82.0" layoutX="1574.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/soap.png" />
+         </image>
+      </ImageView>
+   </children>
+
+</AnchorPane>

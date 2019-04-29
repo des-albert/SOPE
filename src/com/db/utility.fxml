@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchor" prefHeight="714.0" prefWidth="750.0" stylesheets="@../../css/style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.db.utility">
+   <children>
+      <TextField fx:id="textField_Code" layoutX="25.0" layoutY="50.0" prefHeight="31.0" prefWidth="246.0" styleClass="text-fill" stylesheets="@../../css/style.css" />
+      <TextField fx:id="textField_Solution_Type" layoutX="367.0" layoutY="115.0" prefHeight="31.0" prefWidth="213.0" styleClass="text-fill" stylesheets="@../../css/style.css" />
+      <TextArea fx:id="textAreaApprovals" layoutX="24.0" layoutY="575.0" prefHeight="104.0" prefWidth="335.0" styleClass="text-area-fill" stylesheets="@../../css/style.css" />
+      <TextField fx:id="textField_ExceptionName" layoutX="567.0" layoutY="235.0" prefHeight="31.0" prefWidth="153.0" styleClass="text-fill" stylesheets="@../../css/style.css" />
+      <TextField fx:id="textField_AgileId" layoutX="567.0" layoutY="303.0" prefHeight="31.0" prefWidth="153.0" styleClass="text-fill" stylesheets="@../../css/style.css" />
+
+      <Button fx:id="button_Get_Data" layoutX="350.0" layoutY="384.0" mnemonicParsing="false" onAction="#ButtonGetDataOnAction" prefHeight="27.0" prefWidth="153.0" style=": ;" styleClass="button-fill" stylesheets="@../../css/style.css" text="Get Item Data" />
+      <Button fx:id="button_Quit" layoutX="620.0" layoutY="613.0" mnemonicParsing="false" onAction="#ButtonQuitOnAction" prefHeight="25.0" prefWidth="74.0" style=": ;" styleClass="button-fill" stylesheets="@../../css/style.css" text="Quit" />
+      <Button fx:id="button_prelim_code" layoutX="579.0" layoutY="352.0" mnemonicParsing="false" onAction="#ButtonPrelimCodeOnAction" style=": ;" styleClass="button-fill" stylesheets="@../../css/style.css" text="Preliminary Code" />
+      <Button fx:id="button_approval_status" layoutX="438.0" layoutY="613.0" mnemonicParsing="false" onAction="#ButtonApprovalStatusOnAction" style=": ;" styleClass="button-fill" stylesheets="@../../css/style.css" text="Approval Status" />
+      <Button fx:id="button_Code_SD" layoutX="349.0" layoutY="440.0" mnemonicParsing="false" onAction="#ButtonAddCodeOnAction" prefHeight="27.0" prefWidth="153.0" style=": ;" styleClass="button-fill" stylesheets="@../../css/style.css" text="SD Item" />
+      <Button fx:id="button_create_MCO" layoutX="350.0" layoutY="495.0" mnemonicParsing="false" onAction="#ButtonCreateMCOOnAction" prefHeight="27.0" prefWidth="153.0" style=": ;" styleClass="button-fill" stylesheets="@../../css/style.css" text="Create MCO" />
+      <Label layoutX="25.0" layoutY="21.0" prefHeight="18.0" prefWidth="165.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Custom Code" />
+
+
+      <Label fx:id="label_Utility_Status" layoutX="27.0" layoutY="678.0" prefHeight="18.0" prefWidth="420.0" stylesheets="@../../css/style.css" text="Label" />
+      <Label fx:id="label_Description" layoutX="25.0" layoutY="117.0" prefHeight="88.0" prefWidth="312.0" styleClass="label" stylesheets="@../../css/style.css" text="Description" wrapText="true" />
+      <Label fx:id="label_LifeCycle" layoutX="26.0" layoutY="239.0" prefHeight="19.0" prefWidth="141.0" stylesheets="@../../css/style.css" text="LifeCycle" />
+      <Label fx:id="label_product_Line" layoutX="25.0" layoutY="283.0" prefHeight="22.0" prefWidth="265.0" stylesheets="@../../css/style.css" text="Product Line" />
+      <Label layoutX="367.0" layoutY="211.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Change Analyst" />
+      <Label layoutX="367.0" layoutY="150.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Product Team" />
+      <Label layoutX="367.0" layoutY="274.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Product Line" />
+      <Label layoutX="367.0" layoutY="18.0" prefHeight="18.0" prefWidth="165.0" styleClass="label-heading" stylesheets="@../../css/style.css" text="Agile Utilities" />
+      <Label fx:id="label_Total_Cost" layoutX="25.0" layoutY="334.0" prefHeight="22.0" prefWidth="265.0" stylesheets="@../../css/style.css" text="Total Cost" />
+      <Label layoutX="25.0" layoutY="310.0" prefHeight="18.0" prefWidth="165.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Cost" />
+      <Label layoutX="25.0" layoutY="265.0" prefHeight="18.0" prefWidth="165.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Product Line" />
+      <Label layoutX="25.0" layoutY="211.0" prefHeight="18.0" prefWidth="165.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="LifeCycle" />
+      <Label layoutX="26.0" layoutY="86.0" prefHeight="18.0" prefWidth="165.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Description" />
+      <Label layoutX="562.0" layoutY="274.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Agile ID" />
+      <Label layoutX="562.0" layoutY="211.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Exception Name" />
+      <Label layoutX="367.0" layoutY="96.0" prefHeight="18.0" prefWidth="141.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="Solution Type" />
+      <Label layoutX="25.0" layoutY="375.0" prefHeight="18.0" prefWidth="165.0" styleClass="label-caption" stylesheets="@../../css/style.css" text="SD List" />
+
+      <ChoiceBox fx:id="choiceBox_ChangeAnalyst" layoutX="367.0" layoutY="236.0" prefHeight="28.0" prefWidth="116.0" styleClass="choice-box-fill" stylesheets="@../../css/style.css" />
+      <ChoiceBox fx:id="choiceBox_Product_Team" layoutX="367.0" layoutY="177.0" prefHeight="28.0" prefWidth="116.0" styleClass="choice-box-fill" stylesheets="@../../css/style.css" />
+      <ChoiceBox fx:id="choiceBox_Product_Line" layoutX="367.0" layoutY="305.0" prefHeight="28.0" prefWidth="116.0" styleClass="choice-box-fill" stylesheets="@../../css/style.css" />
+
+      <ImageView fitHeight="56.0" fitWidth="74.0" layoutX="633.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../../img/soap.png" />
+      </ImageView>
+      <ListView fx:id="listView_Codes" editable="true" layoutX="25.0" layoutY="404.0" prefHeight="138.0" prefWidth="212.0" styleClass="text-area-fill" stylesheets="@../../css/style.css" />
+      <Separator layoutX="21.0" layoutY="556.0" prefHeight="0.0" prefWidth="716.0" />
+   </children>
+</AnchorPane>
