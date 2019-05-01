@@ -130,6 +130,7 @@ public class firstArticle {
         else {
             MCOExtendedDescription = "EFFECTIVITY: UPON RELEASE\n\nMATERIAL DISPOSITION: NONE\n\n" +
                 "FIELD IMPACT: NO IMPACT\n \n " +
+                "REASON FOR CHANGE: REQUEST FOR THIS ITEM HAS BEEN APPROVED\n" +
                 "BY THE PRODUCT TEAM AND CAN BE RELEASED TO FA FOR QUOTING PURPOSES.\n \n" +
                 "OTHER IMPACT: NONE\n";
             MCODescription = choiceBox_Product_Team.getSelectionModel().getSelectedItem() +
